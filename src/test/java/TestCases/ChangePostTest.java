@@ -23,8 +23,8 @@ public class ChangePostTest extends BaseTest {
             changemenu.Join();
             String actualPostText = postmenu.GetPostText();
             String expectedPostText = TestsData.changeTextPost;
-            //Assert.assertEquals(expectedPostText, actualPostText);
-            Assert.assertTrue(actualPostText.equals(expectedPostText));
+            Assert.assertEquals(expectedPostText, actualPostText);
+            //.assertTrue(actualPostText.equals(expectedPostText));
             Thread.sleep(3000);
             mainMenu.logout();
 
